@@ -10,8 +10,7 @@ Run and expose as container:
 
 ####  Screenshots for reference:
 
-
-<img width="1728" alt="Screenshot 2024-07-08 at 2 42 38 PM" src="https://github.com/Sharath456p/go-project-assignment/assets/95084540/61ad6994-5f5a-4bc5-b6d5-b52d5afbc738">
+<img width="1292" alt="Screenshot 2024-07-08 at 3 14 21 PM" src="https://github.com/Sharath456p/go-project-assignment/assets/95084540/8b51a4b3-c771-427a-b5d9-b19d40c0563c">
 
 
 <img width="1728" alt="Screenshot 2024-07-08 at 2 35 09 PM" src="https://github.com/Sharath456p/go-project-assignment/assets/95084540/b2d48caf-914b-418d-9681-50a342ebd6ae">
