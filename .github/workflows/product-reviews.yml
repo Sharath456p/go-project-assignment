@@ -24,6 +24,9 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: sharathsharath/product-review
+          tags: |
+            type=sha
+            type=raw,value=latest
       
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
@@ -31,4 +34,3 @@ jobs:
           context: product-reviews
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}

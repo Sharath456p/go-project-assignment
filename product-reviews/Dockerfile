@@ -7,17 +7,15 @@ WORKDIR /go/src/app
 # Copy your Go code to the working directory
 COPY . .
 
-# Install dependencies (replace with your actual command if different)
-RUN go mod download
 
-# Build the Go binary (adjust the output name if needed)
-RUN go build -o main
+# Build the Go binary 
+RUN go build -o /app/main
 
 # Use a slimmer image for the final image
 FROM alpine:latest
 
 # Copy the built binary from the builder stage
-COPY --from=builder /go/src/app/main /app
+COPY --from=builder /app/main /app/main
 
 # Set the entrypoint to run your Go binary
 ENTRYPOINT ["/app/main"]
