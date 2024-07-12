@@ -76,6 +76,11 @@ func main() {
 			"message": "pong",
 		})
 	})
+	router.GET("/sanity", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "Success",
+		})
+	})
 
 	router.Run(":8080")
 }
